@@ -27,6 +27,7 @@ syn0 = 2*np.random.random((2,4)) - 1
 syn1 = 2*np.random.random((4,1)) - 1
 
 #training
+print('Training:')
 for j in range(0, 60000):
 
     #layers
