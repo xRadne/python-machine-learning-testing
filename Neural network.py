@@ -52,11 +52,12 @@ for j in range(0, 60000):
 
 #test the model
 print ('\n', 'Output after training')
-print (l2, '\n')
+for i in range(0, 4):
+    print (x[i][0], ' XOR ', x[i][1], ' => ', l2[i][0])
 
 a = int(2 * np.random.rand(1))
-print("Test the model: ")
-num = input("Input: " + str(a) + ' XOR ')
+print("\nTest the model: ")
+num = input("Random number: " + str(a) + ' XOR ')
 
 l0 = np.array([a,int(num)])
 l1 = nonlin(np.dot(l0, syn0))
