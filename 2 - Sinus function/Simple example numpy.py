@@ -13,7 +13,7 @@ c = np.random.randn()
 d = np.random.randn()
 
 learning_rate = 1e-6
-for t in range(10000):
+for t in range(2000):
     # Forward pass: compute predicted y
     # y = a + b x + c x^2 + d x^3
     y_pred = a + b * x + c * x ** 2 + d * x ** 3
