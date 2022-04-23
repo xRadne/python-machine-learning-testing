@@ -30,7 +30,7 @@ class Polynomial3(torch.nn.Module):
         return f'y = {self.a.item()} + {self.b.item()} x + {self.c.item()} x^2 + {self.d.item()} x^3'
 
 
-# Create Tensors to hold input and outputs.
+# Create Tensors to hold input and outputs.        
 x = torch.linspace(-math.pi, math.pi, 2000)
 y = torch.sin(x)
 
